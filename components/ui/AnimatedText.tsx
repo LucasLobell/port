@@ -6,7 +6,7 @@ import React, { useEffect } from 'react';
 const AnimatedText = () => {
   useEffect(() => {
     gsap.to('.gradient-text', {
-      duration: 10,
+      duration: 8,
       repeat: -1, // Infinite loop
       backgroundPosition: '200% 0', // Gradually move the gradient
       ease: 'linear',
@@ -15,7 +15,7 @@ const AnimatedText = () => {
   
   return (
     <div 
-      className="w-fit text-[96px] font-medium font-poppins text-transparent bg-clip-text gradient-text mt-[31px]" 
+      className="w-fit text-[46px] xs:text-[50px] sm:text-[64px] md:text-[72px] lg:text-[80px] xl:text-[88px] 2xl:text-[96px] font-medium font-poppins text-transparent bg-clip-text gradient-text mt-[31px]" 
       style={{ 
         background: 'linear-gradient(89.81deg, #9845e8, #33d2ff, #dd5789, #9845e8)', // Gradient for text
         backgroundSize: '200% 200%', // Make the background twice the size of the element to create the animation effect
