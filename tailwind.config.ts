@@ -13,8 +13,19 @@ const config: Config = {
         foreground: "var(--foreground)",
         white: "#fff",
         gray: "#111",
+        whitesmoke: "#f0f0f0",
       },
+      "spacing": {},
+      "fontFamily": {
+        "inter": "Inter",
+        "poppins": "Poppins",
+      }
     },
+    "fontSize": {
+      "lg": "18px",
+      "xs": "12px",
+      "inherit": "inherit"
+    }
   },
   plugins: [],
 };

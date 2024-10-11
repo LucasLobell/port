@@ -4,44 +4,25 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="w-full relative h-[105px] text-left text-xs text-white font-inter">
-      <div className="absolute top-[0px] left-[calc(50%_-_720px)] bg-gray w-[1440px] h-[105px]" />
-      <div className="absolute top-[34px] left-[calc(50%_+_499px)] w-[41px] h-[34.8px]">
-        <div className="absolute top-[0px] left-[calc(50%_-_6.5px)]">en</div>
-        <div className="absolute top-[19px] left-[calc(50%_+_8.5px)]">pt</div>
-        <div className="absolute top-[19px] left-[calc(50%_-_20.5px)]">es</div>
-        <img
-          className="absolute top-[11.63px] left-[calc(50%_+_10px)] w-[3.8px] h-[9.7px] object-contain"
-          alt=""
-          src="Arrow 1.svg"
-        />
-        <img
-          className="absolute top-[12px] left-[calc(50%_-_13.5px)] w-[6.6px] h-[9.3px] object-contain"
-          alt=""
-          src="Arrow 2.svg"
-        />
-        <img
-          className="absolute top-[31px] left-[calc(50%_-_4.5px)] w-[9.7px] h-[3.8px] object-contain"
-          alt=""
-          src="Arrow 3.svg"
-        />
-      </div>
-      <div className="absolute top-[34px] left-[calc(50%_-_540px)] w-[1080px] h-9 text-[24px]">
-        <div className="absolute top-[4px] left-[0px] w-[1007px] flex flex-row items-center justify-between">
-          <Link href="/" className="relative font-light">
-            LL
-          </Link>
-          <div className="flex flex-row items-center justify-center gap-[30px] text-lg">
-            <Link href="/projects" className="relative font-light">
-              Projects
-            </Link>
-            <Link href="/resume" className="relative font-light">
-              Resume
-            </Link>
-            <Link href="/contact" className="relative font-light">
-              Contact
-            </Link>
-          </div>
+    <div className="bg-gray text-white h-[70px] md:h-[80px] lg:h-[90px] xl:h-[105px]">
+      <div className="mx-[clamp(12px,11.75vw,300px)] flex flex-row justify-between items-center h-full font-inter">
+        <Link
+          href="/"
+          className="text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] 2xl:text-[26px]"
+        >
+          LL
+        </Link>
+        <div className="flex flex-row gap-[30px] items-center text-[12px] md:text-[14px] lg:text-[16px] xl:text-[18px] 2xl:text-[20px]">
+          <Link href="/#Projects">Projects</Link>
+          <Link href="/#Resume">Resume</Link>
+          <Link href="/#Contact">Contact</Link>
+          <Image
+            src="/group 23.svg"
+            alt=""
+            width={40}
+            height={40}
+            className="w-[28px] h-[28px] md:w-[32px] md:h-[32px] lg:w-[36px] lg:h-[36px] xl:w-[40px] xl:h-[40px] 2xl:w-[44px] 2xl:h-[44px]"
+          />
         </div>
       </div>
     </div>
