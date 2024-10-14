@@ -38,8 +38,8 @@ const HeroButtons = () => {
         <Image
           src="/Line 5.svg"
           alt="Line"
-          width={4}
-          height={4}
+          width={7}
+          height={7}
           className="md:w-[5px] xl:w-[6px]"
         />
       </div>

@@ -6,7 +6,7 @@ import HeroButtons from './ui/HeroButtons';
 
 const Hero = () => {
   return (
-    <div className='bg-gray h-[560px] lg:h-[600px] 2xl:h-[655px]'>
+    <div className='bg-gray h-[560px] lg:h-[600px] 2xl:h-[665px]'>
       <div className='mx-[clamp(12px,11.75vw,300px)] flex flex-col'>
         <div className='text-white font-inter text-[6px] xs:text-[7px] sm:text-[8px] md:text-[10px] lg:text-[12px] xl:text-[14px] 2xl:text-[16px] mt-[35px] md:mt-[60px] lg:mt-[65px] 2xl:mt-[73px]'>
           {`Hey, I'm`}
