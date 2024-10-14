@@ -4,16 +4,16 @@ import React from "react";
 
 const FeaturedProjects = () => {
   return (
-    <div className="flex flex-row justify-between 2xl:mt-[51px]">
-      <div className="w-[344px]">
+    <div className="flex flex-col md:flex-row justify-between mt-[30px] md:mt-[36px] lg:mt-[40px] xl:mt-[46px] 2xl:mt-[51px]">
+      <div className="md:w-[260px] lg:w-[290px] xl:w-[315px] 2xl:w-[344px]">
         <Image
-          className="flex w-[344px] h-[237px]"
+          className="flex md:w-[200px] md:h-[138px] lg:w-[250px] lg:h-[172px] xl:w-[315px] xl:h-[217px] 2xl:w-[344px] 2xl:h-[237px]"
           src="/white.png"
           alt=""
           width={344}
           height={237}
         />
-        <div className="2xl:mt-[26px]">
+        <div className="xs:mt-[16px] sm:mt-[18px] md:mt-[20px] lg:mt-[22px] xl:mt-[24px] 2xl:mt-[26px]">
           <div className="flex flex-col justify-between gap-[30px]">
             <span className="text-[24px] text-white">WNL Digital</span>
             <span className="text-[14px] text-[#c4c4c4]">
@@ -58,7 +58,7 @@ const FeaturedProjects = () => {
           width={344}
           height={237}
         />
-        <div className="2xl:mt-[26px]">
+        <div className="xs:mt-[16px] sm:mt-[18px] md:mt-[20px] lg:mt-[22px] xl:mt-[24px] 2xl:mt-[26px]">
           <div className="flex flex-col justify-between gap-[30px]">
             <span className="text-[24px] text-white">School Management</span>
             <span className="text-[14px] text-[#c4c4c4]">
@@ -102,7 +102,7 @@ const FeaturedProjects = () => {
           width={344}
           height={237}
         />
-        <div className="2xl:mt-[26px]">
+        <div className="xs:mt-[16px] sm:mt-[18px] md:mt-[20px] lg:mt-[22px] xl:mt-[24px] 2xl:mt-[26px]">
           <div className="flex flex-col justify-between gap-[30px]">
             <span className="text-[24px] text-white">FoodDelivery</span>
             <span className="text-[14px] text-[#c4c4c4]">
