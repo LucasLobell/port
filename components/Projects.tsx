@@ -1,57 +1,26 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import FeaturedProjects from "./ui/FeaturedProjects";
 
 const Projects = () => {
   return (
-    <div className='mx-[clamp(12px,11.75vw,300px)] font-inter 2xl:mt-[75px]'>
-      <div className='w-full justify-between flex flex-row'>
-        <span className='uppercase 2xl:text-[18px] text-white'>Featured Projects</span>
-        <span className='uppercase 2xl:text-[14px] text-white text-opacity-75'>More Projects</span>
+    <div className="mx-[clamp(12px,11.75vw,300px)] font-inter 2xl:mt-[75px]" id="Projects">
+      <div className="w-full justify-between flex flex-row">
+        <span className="uppercase 2xl:text-[18px] text-white">
+          Featured Projects
+        </span>
+        <Link
+          href="/projetos"
+          className="uppercase 2xl:text-[14px] text-white text-opacity-75 hover:underline"
+        >
+          More Projects
+        </Link>
       </div>
-      <div>
-        <Image src='' alt='' width={5} height={5} />
-        <div>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div>
-            <button></button>
-            <Image src='' alt='' width={5} height={5} />
-          </div>
-        </div>
-      </div>
-      <div>
-        <Image src='' alt='' width={5} height={5} />
-        <div>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div>
-            <button></button>
-            <Image src='' alt='' width={5} height={5} />
-          </div>
-        </div>
-      </div>
-      <div>
-        <Image src='' alt='' width={5} height={5} />
-        <div>
-          <div>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div>
-            <button></button>
-            <Image src='' alt='' width={5} height={5} />
-          </div>
-        </div>
-      </div>
+      <FeaturedProjects />
+      <hr className="mt-[92px] w-full border-[#c6c6c6] h-[0.6px]" />
     </div>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;
