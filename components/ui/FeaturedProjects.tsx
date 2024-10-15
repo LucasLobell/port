@@ -4,10 +4,10 @@ import React from "react";
 
 const FeaturedProjects = () => {
   return (
-    <div className="flex flex-col md:flex-row justify-between mt-[30px] md:mt-[36px] lg:mt-[40px] xl:mt-[46px] 2xl:mt-[51px] gap-[45px] md::gap-[10px] xl:gap-[25px]">
-      <div className="md:w-[260px] lg:w-[290px] xl:w-[315px] 2xl:w-[344px]">
+    <div className="flex flex-col md:flex-row justify-between mt-[30px] md:mt-[36px] lg:mt-[40px] xl:mt-[46px] 2xl:mt-[51px] gap-[45px] md::gap-[6px] xl:gap-[20px]">
+      <div className="md:w-[190px] lg:w-[250px] xl:w-[315px] 2xl:w-[344px]">
         <Image
-          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:w-[200px] md:h-[138px] lg:w-[250px] lg:h-[172px] xl:w-[315px] xl:h-[217px] 2xl:w-[344px] 2xl:h-[237px]"
+          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:h-[131px] lg:h-[172px] xl:h-[217px] 2xl:h-[237px]"
           src="/white.png"
           alt=""
           width={344}
@@ -50,9 +50,9 @@ const FeaturedProjects = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[260px] lg:w-[290px] xl:w-[315px] 2xl:w-[344px]">
+      <div className="md:w-[190px] lg:w-[250px] xl:w-[315px] 2xl:w-[344px]">
         <Image
-          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:w-[200px] md:h-[138px] lg:w-[250px] lg:h-[172px] xl:w-[315px] xl:h-[217px] 2xl:w-[344px] 2xl:h-[237px]"
+          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:h-[131px] lg:h-[172px] xl:h-[217px] 2xl:h-[237px]"
           src="/red.png"
           alt=""
           width={344}
@@ -94,9 +94,9 @@ const FeaturedProjects = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[260px] lg:w-[290px] xl:w-[315px] 2xl:w-[344px]">
+      <div className="md:w-[190px] lg:w-[250px] xl:w-[315px] 2xl:w-[344px]">
         <Image
-          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:w-[200px] md:h-[138px] lg:w-[250px] lg:h-[172px] xl:w-[315px] xl:h-[217px] 2xl:w-[344px] 2xl:h-[237px]"
+          className="flex w-full 2xs:h-[225px] xs:h-[250px] sm:h-[275px] md:h-[131px] lg:h-[172px] xl:h-[217px] 2xl:h-[237px]"
           src="/blue.png"
           alt=""
           width={344}
