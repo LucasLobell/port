@@ -8,3 +8,53 @@ body {
     @apply leading-[normal] m-0;
 }
 *, ::before, ::after { border-width: 0; }
+
+.scrollbar-custom {
+    --scrollbar-thumb-radius: 6px; 
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  @media (min-width: 640px) { 
+    .scrollbar-custom::-webkit-scrollbar {
+      width: 8px;
+    }
+  }
+  
+  @media (min-width: 1024px) { 
+    .scrollbar-custom::-webkit-scrollbar {
+      width: 10px;
+    }
+  }
+  
+  @media (min-width: 1536px) { 
+    .scrollbar-custom::-webkit-scrollbar {
+      width: 12px;
+    }
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-track {
+    background: #111; 
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb {
+    background: #222;
+    border-radius: var(--scrollbar-thumb-radius);
+  }
+  
+  .scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background: #333;
+  }
+  
+  .not-rounded-top::-webkit-scrollbar-thumb {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .not-rounded-bottom::-webkit-scrollbar-thumb {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  

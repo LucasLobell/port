@@ -6,7 +6,7 @@ import Hero from "@/components/Hero";
 export default function Home() {
   return (
     <main>
-      <div className="bg-black overlfow-x-scroll no-scrollbar">
+      <div className="bg-black">
         <Hero />
         <Projects />
         <Resume />

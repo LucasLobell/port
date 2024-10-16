@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ScrollHandler from "@/components/ScrollHandler"; 
 
 export const metadata: Metadata = {
   title: "Lucas Lobell",
@@ -15,7 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="">
+      <body className="overflow-auto h-screen scrollbar-custom">
+        <ScrollHandler />
         <Header />
         {children}
         <Footer />
