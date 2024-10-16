@@ -14,7 +14,7 @@ const AnimatedBar = () => {
     }, []);
   
     return (
-      <div className="relative w-full h-[8px] sm:h-[10px] lg:h-[12px] 2xl:h-[15px] opacity-[0.5] mt-[35px] overflow-hidden">
+      <div className="relative w-full h-[8px] sm:h-[10px] lg:h-[12px] 2xl:h-[15px] opacity-[0.5] mt-[35px] overflow-hidden pointer-events-none">
         <div className="absolute inset-0 bg-black rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] opacity-25" />
         <div
           className="footer-gradient-bar w-full h-full rounded-t-[6px] sm:rounded-t-[8px] lg:rounded-t-[10px] rounded-b-none"
