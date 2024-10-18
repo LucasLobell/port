@@ -38,15 +38,13 @@ const FeaturedProjects = () => {
                 <span className="ml-[10px]">Live demo</span>
               </div>
             </button>
-            <Link href="https://www.github.com">
-              <Image
-                className=""
-                src="/github2.svg"
-                alt=""
-                width={36}
-                height={36}
-              />
-            </Link>
+            <a
+              href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/github2.svg" alt="GitHub" width={36} height={36} />
+            </a>
           </div>
         </div>
       </div>
@@ -82,15 +80,13 @@ const FeaturedProjects = () => {
                 <span className="ml-[10px]">Live demo</span>
               </div>
             </button>
-            <Link href="https://www.github.com">
-              <Image
-                className=""
-                src="/github2.svg"
-                alt=""
-                width={36}
-                height={36}
-              />
-            </Link>
+            <a
+              href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/github2.svg" alt="GitHub" width={36} height={36} />
+            </a>
           </div>
         </div>
       </div>
@@ -127,15 +123,13 @@ const FeaturedProjects = () => {
                 <span className="ml-[10px]">Live demo</span>
               </div>
             </button>
-            <Link href="https://www.github.com">
-              <Image
-                className=""
-                src="/github2.svg"
-                alt=""
-                width={36}
-                height={36}
-              />
-            </Link>
+            <a
+              href="https://www.github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image src="/github2.svg" alt="GitHub" width={36} height={36} />
+            </a>
           </div>
         </div>
       </div>
