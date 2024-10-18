@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 
-interface Experience {
+interface Education {
   title: string;
   company: string;
   dates: string;
@@ -10,7 +10,7 @@ interface Experience {
   responsibilities: string[];
 }
 
-const experiences: Record<string, Experience> = {
+const educations: Record<string, Education> = {
   currently: {
     title: 'Web Developer (Remote)',
     company: 'Currently',
@@ -23,7 +23,7 @@ const experiences: Record<string, Experience> = {
   },
   logica: {
     title: 'Web Developer',
-    company: 'Lógica',
+    company: 'University',
     dates: 'Jan 2022 - May 2023',
     location: 'BR - Panambi',
     responsibilities: [
@@ -33,7 +33,7 @@ const experiences: Record<string, Experience> = {
   },
   cipex: {
     title: 'English Teacher',
-    company: 'CIPEX',
+    company: 'Technician',
     dates: 'Jan 2022 - Feb 2023',
     location: 'BR - Panambi',
     responsibilities: [
@@ -43,10 +43,10 @@ const experiences: Record<string, Experience> = {
   },
 };
 
-const ExperienceList = () => {
-  const [activeExperience, setActiveExperience] = useState<keyof typeof experiences>('currently');
+const EducationList = () => {
+  const [activeExperience, setActiveExperience] = useState<keyof typeof educations>('currently');
 
-  const handleExperienceClick = (key: keyof typeof experiences) => {
+  const handleExperienceClick = (key: keyof typeof educations) => {
     setActiveExperience(key);
   };
 
@@ -55,25 +55,25 @@ const ExperienceList = () => {
       <div className='text-white w-[200px]'>
         <div>Experience</div>
         <div className='flex flex-col mt-[33px] border-l-[1px] border-l-gray'>
-          {Object.keys(experiences).map((key) => (
+          {Object.keys(educations).map((key) => (
             <div
               key={key}
               className={`py-[16px] pl-[36px] pr-[80px] cursor-pointer ${activeExperience === key ? 'bg-gray border-l-[1px] border-l-white' : ''}`}
-              onClick={() => handleExperienceClick(key as keyof typeof experiences)}
+              onClick={() => handleExperienceClick(key as keyof typeof educations)}
             >
-              {experiences[key].company}
+              {educations[key].company}
             </div>
           ))}
         </div>
       </div>
       <div className='mt-[55px]'>
         <div className='flex justify-between w-[800px] mb-[26px]'>
-          <span className='text-white'>{experiences[activeExperience].title}</span>
-          <span className='text-[#bababa]'>{experiences[activeExperience].dates}</span>
+          <span className='text-white'>{educations[activeExperience].title}</span>
+          <span className='text-[#bababa]'>{educations[activeExperience].dates}</span>
         </div>
         <div className='flex flex-col justify-between gap-[26px]'>
-          <span className='text-[#6cace4]'>{experiences[activeExperience].location}</span>
-          {experiences[activeExperience].responsibilities.map((resp, index) => (
+          <span className='text-[#6cace4]'>{educations[activeExperience].location}</span>
+          {educations[activeExperience].responsibilities.map((resp, index) => (
             <span key={index} className='text-[#bababa]'>{resp}</span>
           ))}
         </div>
@@ -82,4 +82,4 @@ const ExperienceList = () => {
   );
 };
 
-export default ExperienceList;
+export default EducationList;

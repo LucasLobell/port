@@ -18,7 +18,7 @@ const Projects = () => {
         </Link>
       </div>
       <FeaturedProjects />
-      <hr className="mt-[92px] w-full border-[#c6c6c6] h-[0.6px]" />
+      <hr className="mt-[60px] xs:mt-[64px] sm:mt-[68px] md:mt-[74px] lg:mt-[80px] xl:mt-[86px] 2xl:mt-[92px] w-full border-[#c6c6c6] h-[0.6px]" />
     </div>
   );
 };
