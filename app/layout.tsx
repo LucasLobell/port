@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-auto h-screen scrollbar-custom">
+      <body className="overflow-auto h-screen scrollbar-custom bg-black">
         <ScrollHandler />
         <Header />
         {children}
