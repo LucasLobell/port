@@ -12,7 +12,7 @@ const Hero = () => {
           {`Hey, I'm`}
         </div>
         <AnimatedText />
-        <div className='text-[8px] xs:text-[9px] sm:text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] leading-[24px] font-inter text-whitesmoke text-justify mt-[-7px]'>
+        <div className='text-[9px] xs:text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px] leading-[12px] xs:leading-[16px] md:leading-[20px] lg:leading-[24px] font-inter text-whitesmoke text-justify mt-[8px] 2xs:mt-[26px] xs:mt-[20px] md:mt-[10px] lg:mt-[2px] 2xl:mt-[-7px]'>
           {`I'm a Web Developer based in Panambi, Brasil and also an Internet Systems student. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I have studied Web Development for about 2 years now, but really dove into it around half a year ago. I have also started freelancing recently while studying at the university and I've manage to gain a decent amount of experience and valuable knowledge mainly in Full-Stack/Front-End Web Development using technologies such as Next.js, React.js, Node.js, etc. `}
         </div>
         <HeroButtons />

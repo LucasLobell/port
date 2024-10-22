@@ -7,12 +7,12 @@ const Projects = () => {
   return (
     <div className="mx-[clamp(12px,11.75vw,300px)] font-inter mt-[45px] md:mt-[50px] lg:mt-[60px] xl:mt-[70px] 2xl:mt-[75px]" id="Projects">
       <div className="w-full justify-between flex flex-row">
-        <span className="uppercase 2xl:text-[18px] text-white">
+        <span className="uppercase text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] text-white">
           Featured Projects
         </span>
         <Link
           href="/projetos"
-          className="uppercase 2xl:text-[14px] text-white text-opacity-75 hover:underline"
+          className="uppercase text-[8px] sm:text-[10px] lg:text-[12px] 2xl:text-[14px] text-white text-opacity-75 hover:underline"
         >
           More Projects
         </Link>
