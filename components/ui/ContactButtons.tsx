@@ -7,9 +7,9 @@ const ContactButtons = () => {
   const [activeButton, setActiveButton] = useState<null | string>(null);
 
   const buttonClass =
-    "relative inline-flex w-[60px] h-[25px] sm:w-[75px] sm:h-[28px] md:w-[100px] md:h-[32px] lg:w-[125px] lg:h-[36px] 2xl:w-[150px] 2xl:h-[42px] overflow-hidden rounded p-[2px] focus:outline-none";
+    "relative inline-flex w-[80px] h-[28px] sm:w-[90px] sm:h-[32px] md:w-[100px] md:h-[32px] lg:w-[125px] lg:h-[36px] 2xl:w-[150px] 2xl:h-[42px] overflow-hidden rounded p-[2px] focus:outline-none";
   
-  const logoClass = "h-[10px] w-[8px] md:h-[14px] md:w-[12px] 2xl:h-[18px] 2xl:w-[16px]"
+  const logoClass = "mx-[2px] h-[10px] w-[8px] md:h-[14px] md:w-[12px] 2xl:h-[18px] 2xl:w-[16px]"
 
   const borderClass = "border border-[#b5b5b5]";
 
@@ -24,7 +24,7 @@ const ContactButtons = () => {
 
   return (
     <div className="flex justify-between items-center">
-      <div className="flex flex-col md:flex-row justify-between font-inter text-white text-[8px] sm:text-[9px] md:text-[10px] lg:text-[12px] 2xl:text-[14px] gap-[5px]">
+      <div className="flex flex-col md:flex-row justify-between font-inter text-white text-[7px] sm:text-[8px] md:text-[10px] lg:text-[12px] 2xl:text-[14px] gap-[12px] xs:gap-[14px] md:gap-[10px]">
         <button
           onClick={() => handleButtonClick("Email", "mailto:youremail@example.com")}
           className={`${buttonClass} ${activeButton === "Email" ? borderClass : ""}`}

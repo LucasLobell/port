@@ -51,14 +51,14 @@ const EducationList = () => {
   };
 
   return (
-    <div className='flex flex-row justify-between gap-[80px] mt-[60px] xs:mt-[64px] sm:mt-[68px] md:mt-[74px] lg:mt-[80px] xl:mt-[86px] 2xl:mt-[92px]'>
-      <div className='text-white w-[200px]'>
-        <div>Experience</div>
-        <div className='flex flex-col mt-[33px] border-l-[1px] border-l-gray'>
+    <div className='flex flex-row justify-between gap-[40px] xs:gap-[50px] md:gap-[60px] lg:gap-[70px] 2xl:gap-[80px] mt-[60px] xs:mt-[64px] sm:mt-[68px] md:mt-[74px] lg:mt-[80px] xl:mt-[86px] 2xl:mt-[92px]'>
+      <div className='text-white w-[50px] xs:w-[80px] md:w-[140px] lg:w-[200px]'>
+      <div className='font-inter text-[12px] xs:text-[13px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] uppercase'>Education</div>
+        <div className='flex flex-col mt-[33px] gap-[30px] xs:gap-[20px] md:gap-[10px] lg:gap-0 border-l-[1px] border-l-gray text-[10px] xs:text-[12px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] font-inter'>
           {Object.keys(educations).map((key) => (
             <div
               key={key}
-              className={`py-[16px] pl-[36px] pr-[80px] cursor-pointer ${activeExperience === key ? 'bg-gray border-l-[1px] border-l-white' : ''}`}
+              className={`py-[16px] pl-[12px] xs:pl-[18px] md:pl-[24px] lg:pl-[36px] pr-[65px] xs:pr-[80px] md:pr-[70px] xl:pr-[80px] cursor-pointer ${activeExperience === key ? 'bg-gray border-l-[1px] border-l-white' : ''}`}
               onClick={() => handleExperienceClick(key as keyof typeof educations)}
             >
               {educations[key].company}
@@ -66,15 +66,15 @@ const EducationList = () => {
           ))}
         </div>
       </div>
-      <div className='mt-[55px]'>
-        <div className='flex justify-between w-[800px] mb-[26px]'>
-          <span className='text-white'>{educations[activeExperience].title}</span>
-          <span className='text-[#bababa]'>{educations[activeExperience].dates}</span>
+      <div className='mt-[55px] flex-1'>
+      <div className='flex justify-between w-full mb-[26px] font-inter items-center'>
+      <span className='text-white text-[10px] xs:text-[12px] md:text-[16px] lg:text-[20px] 2xl:text-[24px]'>{educations[activeExperience].title}</span>
+      <span className='text-[#bababa] text-[9px] xs:text-[10px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] leading-[10px] xs:leading-[12px] md:leading-[16px] lg:leading-[20px] 2xl:leading-[24px]'>{educations[activeExperience].dates}</span>
         </div>
-        <div className='flex flex-col justify-between gap-[26px]'>
-          <span className='text-[#6cace4]'>{educations[activeExperience].location}</span>
+        <div className='flex flex-col justify-between gap-[26px] font-inter'>
+          <span className='text-[#6cace4] text-[8px] xs:text-[9px] md:text-[10px] lg:text-[12px] 2xl:text-[14px] leading-[10px] xs:leading-[12px] md:leading-[16px] lg:leading-[20px] 2xl:leading-[24px]'>{educations[activeExperience].location}</span>
           {educations[activeExperience].responsibilities.map((resp, index) => (
-            <span key={index} className='text-[#bababa]'>{resp}</span>
+             <span key={index} className='text-[#bababa] text-[10px] xs:text-[11px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] leading-[10px] xs:leading-[12px] md:leading-[16px] lg:leading-[20px] 2xl:leading-[24px]'>{resp}</span>
           ))}
         </div>
       </div>
