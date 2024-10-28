@@ -8,6 +8,9 @@ import { getMessages } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 
+// Define a type for valid locales
+type Locale = "en" | "pt" | "es";
+
 export const metadata: Metadata = {
   title: "Lucas Lobell",
   description: "Web Development",
@@ -15,28 +18,26 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({
   children,
-  params: {locale}
+  params: { locale },
 }: {
   children: React.ReactNode;
-  params: {locale: string};
+  params: { locale: Locale }; 
 }) {
-// Ensure that the incoming `locale` is valid
-if (!routing.locales.includes(locale as any)) {
-  notFound();
-}
+  if (!routing.locales.includes(locale)) {
+    notFound();
+  }
 
-// Providing all messages to the client
-// side is the easiest way to get started
-const messages = await getMessages();
+  // Providing all messages to the client side is the easiest way to get started
+  const messages = await getMessages();
 
   return (
     <html lang={locale}>
       <body className="overflow-auto h-screen scrollbar-custom bg-black">
-        <NextIntlClientProvider messages={messages} >
-        <ScrollHandler />
-        <Header />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <ScrollHandler />
+          <Header />
+          {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
