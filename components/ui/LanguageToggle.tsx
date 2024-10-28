@@ -31,7 +31,7 @@ const LanguageToggle = () => {
   return (
     <div className="cursor-pointer" onClick={handleLanguageChange}>
       <Image
-        src="/group23.svg"
+        src="/Language.svg"
         alt="Language Toggle"
         width={40}
         height={40}
