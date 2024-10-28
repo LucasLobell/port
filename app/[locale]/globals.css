@@ -62,8 +62,6 @@ body {
     border-bottom-right-radius: 0;
 }
 
-/* globals.css */
-
 @keyframes gradientFlow {
     0% {
       background-position: 0% 50%;
@@ -82,7 +80,7 @@ body {
     content: '';
     position: absolute;
     inset: 0;
-    padding: 2px; /* Thickness of the border */
+    padding: 2px;
     border-radius: inherit;
     background: conic-gradient(
       from 10deg,
@@ -94,6 +92,6 @@ body {
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
-    z-index: -1; /* Keeps it behind the content */
+    z-index: -1;
   }
   

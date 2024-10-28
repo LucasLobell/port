@@ -1,5 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/routing";
+import LanguageToggle from "./ui/LanguageToggle";
 import React from "react";
 
 const Header = () => {
@@ -16,13 +16,7 @@ const Header = () => {
           <Link href="/#Projects" className="hover:text-[#dedede]">Projects</Link>
           <Link href="/#Resume" className="hover:text-[#dedede]">Resume</Link>
           <Link href="/#Contact" className="hover:text-[#dedede]">Contact</Link>
-          <Image
-            src="/group 23.svg"
-            alt=""
-            width={40}
-            height={40}
-            className="w-[24px] h-[28px] m4:w-[28px] md:h-[28px] lg:w-[32px] lg:h-[32px] xl:w-[36px] xl:h-[36px] 2xl:w-[40px] 2xl:h-[40px]"
-          />
+          <LanguageToggle />
         </div>
       </div>
     </div>
