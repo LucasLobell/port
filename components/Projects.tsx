@@ -1,7 +1,6 @@
-import Image from "next/image";
 import React from "react";
 import FeaturedProjects from "./ui/FeaturedProjects";
-import LocalizedLink from "./ui/LocalizedLink"; // Import the LocalizedLink component
+import LocalizedLink from "./ui/LocalizedLink";
 
 const Projects = () => {
   return (
@@ -10,7 +9,7 @@ const Projects = () => {
         <span className="uppercase text-[12px] sm:text-[14px] lg:text-[16px] 2xl:text-[18px] text-white">
           Featured Projects
         </span>
-        <LocalizedLink /> {/* Use the LocalizedLink component here */}
+        <LocalizedLink />
       </div>
       <FeaturedProjects />
       <hr className="mt-[60px] xs:mt-[64px] sm:mt-[68px] md:mt-[74px] lg:mt-[80px] xl:mt-[86px] 2xl:mt-[92px] w-full border-[#c6c6c6] h-[0.6px]" />

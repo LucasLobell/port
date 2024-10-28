@@ -40,7 +40,7 @@ export const FloatingNav = ({
           transition={{ duration: 0.25 }}
           className={cn(
             "flex max-w-fit fixed top-5 inset-x-0 mx-auto z-[5000] px-8 py-4 items-center justify-center space-x-4 bg-black",
-            "floatingNav", // Apply the animated border class
+            "floatingNav",
             className
           )}
         >

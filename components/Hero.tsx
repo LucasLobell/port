@@ -2,7 +2,6 @@ import React from 'react'
 import AnimatedText from './ui/AnimatedText';
 import HeroButtons from './ui/HeroButtons';
 import { useTranslations } from 'next-intl';
-import { Link } from '@/i18n/routing';
 
 const Hero = () => {
 

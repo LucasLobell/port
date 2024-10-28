@@ -1,17 +1,15 @@
-// components/LanguageToggle.tsx
 "use client";
 
 import { useEffect, useState } from "react";
-import { useRouter } from "next/navigation"; // Import useRouter from next/navigation
+import { useRouter } from "next/navigation"; 
 import Image from "next/image";
 
 const LanguageToggle = () => {
   const languages = ["en", "pt", "es"];
-  const router = useRouter(); // Initialize router
+  const router = useRouter();
   const [currentLocale, setCurrentLocale] = useState("");
 
   useEffect(() => {
-    // Extract the current locale from the pathname when the component mounts
     const localeFromPath = window.location.pathname.split("/")[1];
     setCurrentLocale(localeFromPath);
   }, []);
@@ -25,15 +23,13 @@ const LanguageToggle = () => {
     // Remove the current locale from the path
     const currentPath = window.location.pathname.replace(/^\/(en|pt|es)/, '');
     
-    // Navigate to the new locale with the same path
     router.push(`/${nextLocale}${currentPath}`);
-    
-    // Update the state
+
     setCurrentLocale(nextLocale);
   };
 
   return (
-    <div onClick={handleLanguageChange}>
+    <div className="cursor-pointer" onClick={handleLanguageChange}>
       <Image
         src="/group 23.svg"
         alt="Language Toggle"
