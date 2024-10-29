@@ -94,4 +94,50 @@ body {
     -webkit-mask-composite: xor;
     z-index: -1;
   }
+ 
+  .language {
+    transition: transform 0.3s ease; /* 0.5s to match the delay in handleLanguageChange */
+  }
+  
+  .language.animateLan,
+  .language .imgBX.animateImgBx {
+    animation: animateLan 0.3s linear; /* Only runs once when active */
+  }
+  
+  @keyframes animateLan {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  @keyframes animateImgBx {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .language-container {
+    transition: transform 0.3s ease;
+  }
+  
+  .language-item {
+    transition: transform 0.3s ease;
+    position: absolute;
+    width: max-content;
+    text-align: center;
+  }
+  
+  .arrow-image {
+    transition: transform 0.3s ease;
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    transform-origin: center center;
+  }
   
