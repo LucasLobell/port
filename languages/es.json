@@ -1,5 +1,6 @@
 {
     "Hero": {
-        "description": "Ay caramba hermanito"
+        "greeting": "Hola, soy",
+        "description": "Soy un Desarrollador Web con sede en Panambi, Brasil, y también estudiante de Sistemas para Internet. Disfruto crear cosas que viven en internet, ya sean sitios web, aplicaciones o cualquier cosa intermedia. He estudiado Desarrollo Web durante aproximadamente 2 años, pero realmente me sumergí en ello hace alrededor de medio año. Recientemente, comencé a trabajar como freelancer mientras estudio en la universidad y he logrado adquirir una cantidad decente de experiencia y conocimientos valiosos, principalmente en Desarrollo Web Full-Stack/Front-End, utilizando tecnologías como Next.js, React.js, Node.js, entre otras."
     }
 }

@@ -24,7 +24,7 @@ const FooterButtons = () => {
     <div className="flex justify-between items-center">
       <div className="flex flex-row justify-between font-inter text-white text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] gap-[16px]">
         <button
-          onClick={() => handleButtonClick("instagram", "https://www.instagram.com")}
+          onClick={() => handleButtonClick("instagram", "https://www.instagram.com/lucaslobell/")}
           className={`${buttonClass} ${activeButton === "instagram" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#9358F7_0%,#10D7E2_50%,#9358F7_100%)]" />
@@ -40,7 +40,7 @@ const FooterButtons = () => {
         </button>
 
         <button
-          onClick={() => handleButtonClick("linkedin", "https://www.linkedin.com")}
+          onClick={() => handleButtonClick("linkedin", "https://www.linkedin.com/in/lucas-lobell")}
           className={`${buttonClass} ${activeButton === "linkedin" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#6964DE_0%,#FCA6E9_50%,#6964DE_100%)]" />
@@ -72,7 +72,7 @@ const FooterButtons = () => {
         </button>
 
         <button
-          onClick={() => handleButtonClick("github", "https://www.github.com")}
+          onClick={() => handleButtonClick("github", "https://github.com/LucasLobell")}
           className={`${buttonClass} ${activeButton === "github" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D24074_0%,#6518B4_50%,#D24074_100%)]" />

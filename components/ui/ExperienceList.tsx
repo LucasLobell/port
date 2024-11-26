@@ -17,8 +17,18 @@ const experiences: Record<string, Experience> = {
     dates: 'Jun 2023 - Present',
     location: 'BR - Panambi',
     responsibilities: [
-      '- Developing screens and UI components for the web application using React and Tailwind.',
-      '- Fixing UI issues and integrating backend APIs with Redux Saga.',
+      '- Developing screens, UI components and web applications using Next.js, React.js and Tailwind.',
+      '- Fixing UI issues and integrating backend APIs.',
+    ],
+  },
+  procergs: {
+    title: 'Microsoft Development Analyst',
+    company: 'PROCERGS',
+    dates: 'Nov 2022 - Present',
+    location: 'BR - Porto Alegre',
+    responsibilities: [
+      '- Working on various projects using C#, .NET, ASP.NET, Angular.js, between others.',
+      '- Collaborating with designers and frontend developers to improve the user experience.',
     ],
   },
   logica: {
@@ -27,8 +37,8 @@ const experiences: Record<string, Experience> = {
     dates: 'Jan 2022 - May 2023',
     location: 'BR - Panambi',
     responsibilities: [
-      '- Worked on various projects using React and Tailwind.',
-      '- Collaborated with designers and backend developers to improve the user experience.',
+      '- Worked on projects using Javascript, Apps Script and PostgreSQL.',
+      '- Created and designed sheets using Google Sheets.',
     ],
   },
   cipex: {

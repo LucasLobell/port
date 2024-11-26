@@ -26,7 +26,7 @@ const ContactButtons = () => {
     <div className="flex justify-between items-center">
       <div className="flex flex-col md:flex-row justify-between font-inter text-white text-[7px] sm:text-[8px] md:text-[10px] lg:text-[12px] 2xl:text-[14px] gap-[12px] xs:gap-[14px] md:gap-[10px]">
         <button
-          onClick={() => handleButtonClick("Email", "mailto:youremail@example.com")}
+          onClick={() => handleButtonClick("Email", "mailto:lucaslobell2@gmail.com")}
           className={`${buttonClass} ${activeButton === "Email" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#9358F7_0%,#10D7E2_50%,#9358F7_100%)]" />
@@ -43,7 +43,7 @@ const ContactButtons = () => {
         </button>
 
         <button
-          onClick={() => handleButtonClick("Linkedin", "https://www.linkedin.com")}
+          onClick={() => handleButtonClick("Linkedin", "https://www.linkedin.com/in/lucas-lobell")}
           className={`${buttonClass} ${activeButton === "Linkedin" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#6964DE_0%,#FCA6E9_50%,#6964DE_100%)]" />
@@ -77,7 +77,7 @@ const ContactButtons = () => {
         </button>
 
         <button
-          onClick={() => handleButtonClick("Github", "https://www.github.com")}
+          onClick={() => handleButtonClick("Github", "https://github.com/LucasLobell")}
           className={`${buttonClass} ${activeButton === "Github" ? borderClass : ""}`}
         >
           <span className="absolute inset-[-1000%] animate-[spin_5s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D24074_0%,#6518B4_50%,#D24074_100%)]" />

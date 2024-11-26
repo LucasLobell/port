@@ -1,5 +1,6 @@
 {
-    "Hero": {
-        "description": "Eu tchurusbango"
+   "Hero": {
+        "greeting": "Olá, eu sou",
+        "description": "Sou um Desenvolvedor Web baseado em Panambi, Brasil, e também estudante de Sistemas para Internet. Gosto de criar coisas que vivem na internet, sejam sites, aplicações ou qualquer coisa nesse meio. Estudo Desenvolvimento Web há cerca de 2 anos, mas comecei a me dedicar mais profundamente a isso há cerca de meio ano. Recentemente, comecei a trabalhar como freelancer enquanto estudo na universidade, e consegui adquirir uma boa experiência e conhecimento valioso, principalmente em Desenvolvimento Web Full-Stack/Front-End, utilizando tecnologias como Next.js, React.js, Node.js, entre outras."
     }
 }
