@@ -7,7 +7,7 @@ const HeroButtons = () => {
   const [activeButton, setActiveButton] = useState<null | string>(null);
 
   const buttonClass =
-    "relative inline-flex w-[100px] h-[28px] xs:w-[115px] xs:h-[34px] sm:w-[130px] sm:h-[38px] md:w-[145px] md:h-[45px] lg:w-[160px] lg:h-[48px] 2xl:w-[204px] 2xl:h-[59px] overflow-hidden rounded p-[2px] focus:outline-none";
+    "relative inline-flex w-[125px] h-[32px] xs:w-[140px] xs:h-[38px] sm:w-[150px] sm:h-[42px] md:w-[150px] md:h-[45px] lg:w-[160px] lg:h-[48px] 2xl:w-[204px] 2xl:h-[59px] overflow-hidden rounded p-[2px] focus:outline-none";
   
   const borderClass = "border border-[#b5b5b5]";
 
@@ -21,7 +21,7 @@ const HeroButtons = () => {
   };
 
   return (
-    <div className="flex justify-between items-center mt-[20px] 2xs:mt-[50px] md:mt-[105px] 2xl:mt-[121px]">
+    <div className="flex justify-between items-center mt-[20px] 2xs:mt-[30px] sm:mt-[50px] md:mt-[95px] 2xl:mt-[121px]">
       <div className="flex flex-col md:flex-row w-[76.85%] justify-between font-inter text-white text-[10px] sm:text-[11px] md:text-[12px] lg:text-[14px] 2xl:text-[16px] gap-[5px]">
         <button
           onClick={() => handleButtonClick("Email", "mailto:lucaslobell2@gmail.com")}

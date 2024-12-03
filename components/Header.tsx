@@ -12,7 +12,7 @@ const Header = () => {
         >
           LL
         </Link>
-        <div className="flex flex-row gap-[12px] xs:gap-[18px] md:gap-[24px] 2xl:gap-[30px] items-center text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]">
+        <div className="flex flex-row gap-[16px] xs:gap-[20px] md:gap-[24px] 2xl:gap-[30px] items-center text-[10px] md:text-[12px] lg:text-[14px] xl:text-[16px] 2xl:text-[18px]">
           <Link href="/#Projects" className="hover:text-[#dedede]">Projects</Link>
           <Link href="/#Resume" className="hover:text-[#dedede]">Resume</Link>
           <Link href="/#Contact" className="hover:text-[#dedede]">Contact</Link>

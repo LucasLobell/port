@@ -64,7 +64,7 @@ const ExperienceList = () => {
     <div className='flex flex-row justify-between gap-[40px] xs:gap-[50px] md:gap-[60px] lg:gap-[70px] 2xl:gap-[80px] mt-[60px] xs:mt-[64px] sm:mt-[68px] md:mt-[74px] lg:mt-[80px] xl:mt-[86px] 2xl:mt-[92px]'>
       <div className='text-white w-[50px] xs:w-[80px] md:w-[140px] lg:w-[200px]'>
         <div className='font-inter text-[12px] xs:text-[13px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] uppercase'>Experience</div>
-        <div className='flex flex-col mt-[33px] gap-[30px] xs:gap-[20px] md:gap-[10px] lg:gap-0 border-l-[1px] border-l-gray text-[10px] xs:text-[12px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] font-inter'>
+        <div className='flex flex-col mt-[33px] gap-[10px] xs:gap-[15px] md:gap-[10px] lg:gap-0 border-l-[1px] border-l-gray text-[10px] xs:text-[12px] md:text-[14px] lg:text-[16px] 2xl:text-[18px] font-inter'>
           {Object.keys(experiences).map((key) => (
             <div
               key={key}
