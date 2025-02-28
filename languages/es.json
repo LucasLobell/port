@@ -1,6 +1,6 @@
 {
     "Hero": {
         "greeting": "Hola, soy",
-        "description": "Soy un Desarrollador Web con sede en Panambi, Brasil, y también estudiante de Sistemas para Internet. Disfruto crear cosas que viven en internet, ya sean sitios web, aplicaciones o cualquier cosa intermedia. He estudiado Desarrollo Web durante aproximadamente 2 años, pero realmente me sumergí en ello hace alrededor de medio año. Recientemente, comencé a trabajar como freelancer mientras estudio en la universidad y he logrado adquirir una cantidad decente de experiencia y conocimientos valiosos, principalmente en Desarrollo Web Full-Stack/Front-End, utilizando tecnologías como Next.js, React.js, Node.js, entre otras."
+        "description": "Soy un Desarrollador Full-Stack con sede en Porto Alegre, Brasil, apasionado por el desarrollo web. Disfruto creando cosas que existen en internet, ya sean sitios web, aplicaciones o cualquier otro tipo de solución digital. Actualmente, trabajo como Desarrollador Full-Stack, utilizando principalmente C#/.NET y Angular. \n\n Con experiencia práctica en proyectos reales, me especializo en la creación de aplicaciones web escalables y eficientes. Además de mi trabajo, estoy cursando una licenciatura en Sistemas para Internet. Mi experiencia abarca tanto el desarrollo Full-Stack como el Front-End y, con el tiempo, he adquirido conocimientos valiosos en tecnologías como C#, .NET, Next.js, Angular, React.js y Node.js, entre otras."
     }
 }

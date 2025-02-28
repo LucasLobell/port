@@ -1,6 +1,6 @@
 {
     "Hero": {
         "greeting": "Hey, I'm",
-        "description": "I'm a Web Developer based in Panambi, Brasil and also an Internet Systems student. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I have studied Web Development for about 2 years now, but really dove into it around half a year ago. I have also started freelancing recently while studying at the university and I've manage to gain a decent amount of experience and valuable knowledge mainly in Full-Stack/Front-End Web Development using technologies such as Next.js, React.js, Node.js, etc."
+        "description": "I'm a Full-Stack Developer based in Porto Alegre, Brazil, with a passion for web development. I enjoy building things that live on the internet, whether it be websites, applications, or anything in between. \n\n I currently work as a Full-Stack Developer, primarily using C#/.NET and Angular. With hands-on experience in real-world projects, I specialize in creating scalable and efficient web applications. Alongside my job, I'm pursuing a degree in Internet Systems. My experience spans both Full-Stack and Front-End development, and over time, I’ve gained valuable knowledge working with technologies like C#, .NET, Next.js, Angular, React.js, and Node.js between others."
     }
 }

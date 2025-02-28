@@ -5,49 +5,41 @@ import { useRouter } from "next/navigation";
 import Image from "next/image";
 
 const LanguageToggle = () => {
-  const languages = ["en", "pt", "es"];
+  const [languages, setLanguages] = useState(["en", "pt", "es"]);
+  const [first, setfirst] = useState(false);
   const router = useRouter();
-  const [currentLocale, setCurrentLocale] = useState("");
-
-  const [rotation, setRotation] = useState(0);
 
   useEffect(() => {
     const localeFromPath = window.location.pathname.split("/")[1];
-    setCurrentLocale(localeFromPath);
+
+    const currentIndex = languages.indexOf(localeFromPath);
+
+    const nextIndex = (currentIndex + 1) % languages.length;
+    
+    const plusIndex = (nextIndex + 1) % languages.length;
+
+    setLanguages([localeFromPath, languages[nextIndex], languages[plusIndex]])
   }, []);
 
   const handleLanguageChange = () => {
-    const currentIndex = languages.indexOf(currentLocale);
-    const nextIndex = (currentIndex + 1) % languages.length;
-    const nextLocale = languages[nextIndex];
-
-    // Rotate counterclockwise by -120 degrees on each click
-    setRotation((prevRotation) => prevRotation - 120);
-
+    setfirst(true);
+    const current = JSON.parse(JSON.stringify(languages))
+    
     setTimeout(() => {
-      const currentPath = window.location.pathname.replace(
-        /^\/(en|pt|es)/,
-        ""
-      );
-      router.push(`/${nextLocale}${currentPath}`);
-      setCurrentLocale(nextLocale);
-    }, 300); // Match this to the duration of the animation
+      setfirst(false);
+      setLanguages([current[1], current[2], current[0]])
+      router.push(`/${current[1]}`);
+    }, 1300)
+    
   };
 
-  // Reorder languages to make currentLocale appear at the top
-  const reorderedLanguages = [
-    currentLocale,
-    ...languages.filter((lang) => lang !== currentLocale),
-  ];
-
   return (
-    <div className="cursor-pointer" onClick={handleLanguageChange}>
+    <div className={first ? "cursor-pointer" : "cursor-pointer"} onClick={handleLanguageChange}>
       <div
         className="language-container relative w-[35px] h-[35px]"
-        style={{ transform: `rotate(${rotation}deg)` }}
       >
         <div className="w-full relative h-[34.8px] text-left text-xs text-white font-inter">
-          {reorderedLanguages.map((lang, index) => (
+          {languages.map((lang, index) => (
             <div
               key={lang}
               className={`language-item absolute ${
@@ -56,48 +48,63 @@ const LanguageToggle = () => {
                 index === 1 ? "top-[19px] left-[calc(50%_+_8.5px)]" : ""
               } ${
                 index === 2 ? "top-[19px] left-[calc(50%_-_20.5px)]" : ""
-              }`}
-              style={{ transform: `rotate(${-rotation}deg)` }}
+              } ${
+                index === 0 && first ? "top-[0px] left-[calc(50%_-_6.5px)] slide-w-up" : ""
+              } ${
+                index === 1 && first ? "top-[19px] left-[calc(50%_+_8.5px)] slide-w-down-right" : ""
+              } ${
+                index === 2 && first ? "top-[19px] left-[calc(50%_-_20.5px)] slide-w-down-left" : ""
+              }
+              `}
             >
               {lang}
             </div>
           ))}
-          {/* Right Arrow (no rotation needed) */}
+          {/*<div className={first ? "rotate-center" : ""}>*/}
+
           <Image
-            className="arrow-image absolute top-[11.63px] left-[calc(50%_+_9.75px)] w-[5px] h-[9.7px] object-contain"
+            className={
+              first 
+              ? "arrow-image absolute top-[11.63px] left-[calc(50%_+_9.75px)] w-[5px] h-[9.7px] object-contain slide-up-right" 
+              : "arrow-image absolute top-[11.63px] left-[calc(50%_+_9.75px)] w-[5px] h-[9.7px] object-contain"
+            }
             style={{
               transform: `rotate(0deg)`,
-              transition: "transform 0.3s ease",
             }}
             width={5}
             height={10}
             alt=""
             src="/arrow.svg"
           />
-          {/* Left Arrow (rotate 90 degrees to point down) */}
           <Image
-            className="arrow-image absolute top-[11.2px] left-[calc(50%_-_13.8px)] w-[5px] h-[9.7px] object-contain"
+            className={
+              first
+              ? "arrow-image absolute top-[11.2px] left-[calc(50%_-_14px)] w-[5px] h-[9.7px] object-contain slide-up-left"
+              : "arrow-image absolute top-[11.2px] left-[calc(50%_-_14px)] w-[5px] h-[9.7px] object-contain"
+            }
             style={{
               transform: `rotate(-135deg)`,
-              transition: "transform 0.3s ease",
             }}
             width={5}
             height={10}
             alt=""
             src="/arrow.svg"
           />
-          {/* Bottom Arrow (rotate -90 degrees to point right) */}
           <Image
-            className="arrow-image absolute top-[31px] left-[calc(50%_-_2.55px)] w-[5px] h-[9.7px] object-contain"
+            className={
+              first
+              ? "arrow-image absolute top-[31px] left-[calc(50%_-_2.55px)] w-[5px] h-[9.7px] object-contain slide-down"
+              : "arrow-image absolute top-[31px] left-[calc(50%_-_2.55px)] w-[5px] h-[9.7px] object-contain"
+            }
             style={{
               transform: `rotate(110deg)`,
-              transition: "transform 0.3s ease",
             }}
             width={5}
             height={10}
             alt=""
             src="/arrow.svg"
           />
+            {/*</div>*/}
         </div>
       </div>
     </div>
