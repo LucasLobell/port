@@ -74,7 +74,7 @@ const LanguageToggle = () => {
             width={5}
             height={10}
             alt=""
-            src="/arrow.svg"
+            src="/Arrow.svg"
           />
           <Image
             className={
@@ -88,7 +88,7 @@ const LanguageToggle = () => {
             width={5}
             height={10}
             alt=""
-            src="/arrow.svg"
+            src="/Arrow.svg"
           />
           <Image
             className={
@@ -102,7 +102,7 @@ const LanguageToggle = () => {
             width={5}
             height={10}
             alt=""
-            src="/arrow.svg"
+            src="/Arrow.svg"
           />
             {/*</div>*/}
         </div>
